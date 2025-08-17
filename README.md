@@ -19,6 +19,13 @@ My project includes various attributes including (but not limited to):
 
 I did a deep dive to understand my music taste, favorite artists, top genres, and more. 
 
+## Key Findings
+- **Era breakdown**: 16% from the 90s, oldest song is La Vie en Rose (1952) by Louis Armstrong.
+- **Favorite artists**: Heavy on classic Bollywood (Kishore Kumar – 29 songs), techno/EDM, and timeless rock.
+- **Recent discovery**: Ushuaia by Chestford (2025) — upbeat, dance/electronic gem.
+- **Listening trends**: Biggest additions — April 2025 (147 songs), Jan 2023 (122 songs).
+- **Genres**: 286 unique genres; Bollywood, techno, Hindi pop lead the pack.
+- **Song Popularity**: 51% Popular (≥50), 49% Not Popular. Avg. popularity: ~46.7.
 
 # Breakdown of songs by era
 <br> <img width="480" height="480" alt="output_52_0" src="https://github.com/user-attachments/assets/9414430e-bc77-43b1-a2eb-16fdba768973" />
@@ -63,5 +70,6 @@ The graph above shows the breakdown of count of Popular VS Not Popular Songs in 
 
 **Mean Song Popularity of an Artist = Average Popularity of all Songs Saved per Artist**. Interestingly, almost all the techno artists (Deborah de Luca, Charlotte de Witte, Ballarak, WhoMadeWho, Hozho, T78, Worakls) had much lower average popularity scores. Not sure why techno/EDM doesn’t flourish on Spotify and  maybe just a quirk of my dataset. Eminem, on the other hand, has the most popular songs on average in my library. Eagles, Creedence Clearwater Revival, Fleetwood Mac, and other rock bands are close behind, showing that artists within the same genre often have similar average popularity.
 
+# Conclusion
 Overall, this project gave me a new way to look at my own listening habits and appreciate the blend of mainstream hits, classics, and underrated gems in my library. It was a fun way to bring together my love for music and data, and I look forward to exploring even more patterns in the future.
 
