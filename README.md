@@ -6,14 +6,14 @@ Two things that intrigue me the most are **Music** and **Data**. Taking inspirat
 Using Spotify’s **Spotipy API** and the **current_user_saved_tracks** endpoint, I was able to access my saved/liked songs, a total of 2,709 tracks. Before accessing any endpoint, I had to authorize myself to grant the required permissions needed to pull my own data.
 
 Unfortunately, Spotify has restricted access to several endpoints, including Get Audio Analysis and Get Audio Features, which provide audio details such as acousticness, danceability, energy, valence, and speechiness. This is likely because it could allow others to build proprietary recommendation models using Spotify’s data.
-List of all deprecated endpoints as of November 2024: Spotify API Changes
+List of all deprecated endpoints as of November 2024: [Spotify API Changes](https://developer.spotify.com/blog/2024-11-27-changes-to-the-web-api)
 
 My project includes various attributes including (but not limited to):
 - Song Name
 - Song Saved Date
 - Song ID
 - Song Popularity
-- Release Date
+- Song's Release Date
 - Artist ID
 - Artist Name
 - Artist Popularity
@@ -33,7 +33,7 @@ I did a deep dive to understand my music taste, favorite artists, top genres, an
 # Breakdown of songs by era
 <br> <img width="480" height="480" alt="output_52_0" src="https://github.com/user-attachments/assets/9414430e-bc77-43b1-a2eb-16fdba768973" />
 
-Of my 2,709 songs, ~16% are from the 90s, with the oldest being from 1952: La Vie en Rose – Single Version by Louis Armstrong, who has around 3M followers on Spotify. Many of these songs come from the late 90s, including Bollywood, classic rock, Hindi pop, rock, ghazals, and more.
+Of my 2,709 songs, ~16% are from the 90s, with the oldest being from 1952: La Vie en Rose – Single Version by Louis Armstrong, who has around 3M followers on Spotify. Songs from earlt to late 90s, icnludes Bollywood, classic rock, Hindi pop, rock, ghazals, and more.
 
 <br> <img width="1000" height="1000" alt="1952 to 2025 Song Count" src="https://github.com/user-attachments/assets/94c51d1c-b123-492f-ab76-4045b854bbf5" />
 
@@ -60,7 +60,7 @@ Although Spotify does not collect genre data for each individual song, it does a
 
 <br> <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/8ff45399-67c2-4442-9683-2b88ad2c288b" />
 
-The table above shows the count of artists under each genre. One artist can fall under multiple genres.
+Note: The table above shows the count of artists under each genre. One artist can fall under multiple genres.
 
 # Song Popularity and Artist Popularity 
 Spotify also provides song popularity scores ranging from 0-100, based on signals like total streams, recency of plays, engagement, and skip rates. Most of my songs range between 32–65, with only 9 songs above 90 and 322 songs below 10, suggesting that I often explore underrated or niche tracks, not just mainstream hits.
@@ -68,7 +68,7 @@ Spotify also provides song popularity scores ranging from 0-100, based on signal
 <br> <img width="544" height="420" alt="image" src="https://github.com/user-attachments/assets/21d668c5-94cf-4e8e-8fec-4feb60af31b4" />
 
 For my analysis, I defined a “Popular” song as popularity ≥50, otherwise “Not Popular.” The split came out almost even: 51% Popular vs. 49% Not Popular. Some famous songs that intuitively feel popular, such as *Aa Chal Ke Tujhe* and *Zindagi Ka Safar* by Kishore Kumar, scored below 50. Other notable examples include *Pulaski at Night* by Andrew Bird, *Runaway* by AURORA, and *Don’t Look Now* by Creedence Clearwater Revival.
-On average, my songs score around 46.7 on the Song popularity scale. Similarly, when looking at artist followers and artist popularity, some of my artists have huge fan bases while others are relatively unknown, confirming that my taste is a blend of global stars and underground artists.
+On average, my songs score around 46.7 on the Song popularity scale. Similarly, when looking at artist followers and artist popularity, some of my artists have huge fan bases while others are relatively unknown (629 Artists with <100K followers), confirming that my taste is a blend of global stars and underground artists.
 
 <br> <img width="1789" height="590" alt="output_141_0" src="https://github.com/user-attachments/assets/010af0a6-9a3b-4f61-a325-f2a2be55ac5e" />
 
@@ -78,8 +78,9 @@ The graph above shows the breakdown of count of Popular VS Not Popular Songs in 
 # Artists with 10+ Saved Songs
 
 <br><img width="1990" height="989" alt="output_158_1" src="https://github.com/user-attachments/assets/3f6f3a03-e435-44b1-87e9-ea9f71fdeb0d" />
+**<div align="center">The graph above comapres the #of Songs/Artist with Mean Song Popularity/Artist** </div>
 
-**<div align="center">Mean Song Popularity of an Artist = Average Popularity of all Songs Saved per Artist**</div>
+<br> -- Mean Song Popularity of an Artist = Average Popularity of all Songs Saved per Artist**
 <br> -- Left Y-axis (Bar Grah): # of Songs 
 <br> -- Right Y-axis (Line Graph): Mean Song Popularity 
 
